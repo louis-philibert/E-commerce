@@ -1,0 +1,338 @@
+/* ---------------------------------
+1. GENERALE
+--------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,400;1,600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+html{
+    /*16px par defaut, maintenant 10px*/
+    /*1rem = 10px*/
+    font-size: 62.5%;
+    /*le scroll devient fluide*/
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ---------------------------------
+2. HEADER
+--------------------------------- */
+
+.header{
+    height: 90vh;
+    background-image: url(../Assets/header3.jpg);
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+/****************NAVBAR******************/
+
+#checkbox, .btn span{
+    display: none;
+}
+
+label{
+    display: none;
+}
+
+.navbar{
+    height: 12vh;
+    background-color: transparent;
+    transition: all 0.5s;
+    display: grid;
+    grid-template-columns: 2fr repeat(2,1fr);
+    align-items: center;
+    padding: 0 4rem;
+}
+.navbar:hover{
+    background-color: white;
+}
+
+.navlist-liens{
+    list-style: none;
+    display: grid;
+    width: 75%;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.navlist-liens a{
+    font-family: "Poppins",sans-serif;
+    font-size: 1.7rem;
+    color: #1c2332;
+    text-decoration: none;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.navlist-liens a:hover{
+    font-size: 2rem;
+    border: 3px #e0d00f solid;
+    background-color: #e0d00f;
+    border-radius: 20px;
+}
+
+.compagny{
+    font-family: "Poppins",sans-serif;
+    font-size: 2.5rem;
+    color: #e0d00f;
+}
+
+.navlist-icon{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 3rem;
+    margin-left: auto;
+}
+
+.navlist-icon i{
+    color: #1c2332;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+.navlist-icon a{
+    color: white;
+    background-color: #1c2332;
+    text-decoration: none;
+    padding: 0.2rem 0.4rem;
+    border-radius: 2rem;
+}
+
+
+/****************************************/
+
+/*************MAIN-IMAGE-TEXT************/
+
+.text-h2{
+    font-size: 4.5rem;
+    color: #e0d00f;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/****************************************/
+
+/* ---------------------------------
+3. SECTION (PRODUIT)
+--------------------------------- */
+
+.product-section{
+    padding: 3rem 8rem;
+}
+
+/*************CATEGORY-LIST**************/
+
+.category-list{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 75%;
+    margin: 0 auto;
+    text-align: -webkit-center;
+}
+
+.category-list a{
+    font-size: 1.7rem;
+    color: #1c2332;
+    font-family: "Poppins",sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+}
+.category-list a:hover{
+    font-size: 2rem;
+    border: 3px #e0d00f solid;
+    border-radius: 20%;
+    background-color: #e0d00f;
+}
+/****************************************/
+
+/****************PRODUCTS***************/
+
+.product-list{
+    margin: 3rem;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(20rem, 1fr));
+    gap: 2rem;
+}
+
+.product{
+    text-align: center;
+    position: relative;
+}
+
+.product img{
+    width: 100%;
+}
+
+.my-product{
+    font-size: 1.5rem;
+    color: #1c2332;
+    font-family: "Poppins",sans-serif;
+}
+
+.price-product{
+    font-size: 1.3rem;
+    color: #1c2332;
+    font-family: "Poppins",sans-serif;
+}
+
+.notification{
+    position: absolute;
+    z-index: 10;
+    background-color: #ffbb33;
+    color: white;
+    font-size: 1rem;
+    font-family: "Poppins",sans-serif;
+    padding: 0.5rem 1rem;
+    top: 2rem;
+}
+
+.products-liens{
+    position: absolute;
+    top: 90%;
+    opacity: 0;
+    transition: all 0.5s;
+    inline-size: -webkit-fill-available;
+}
+
+.products-liens a{
+    background-color: #1c2332;
+    padding: 0.5rem 1rem;
+    border-radius: 5rem;
+    margin-right: 2rem;
+}
+
+.products-liens i{
+    color: white;
+    font-size: 1.2rem;
+    transition: all 0.5s;
+}
+.products-liens i:hover{
+    color:#ffbb33;
+}
+
+.product:hover > .products-liens{
+    top: 60%;
+    opacity: 1;
+}
+
+/****************************************/
+
+/*********PRODUCT PROVISIONS*************/
+
+.product-1{
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+}
+
+.product-7{
+    grid-column: 1 / span 3;
+}
+
+/****************************************/
+
+/* ---------------------------------
+4. SECTION (NEWSLETTER)
+--------------------------------- */
+
+.section-newsletter{
+    padding: 5rem 8rem;
+    text-align: center;
+}
+
+.newsletter-title{
+    font-family: "Poppins",sans-serif;
+    font-size: 4rem;
+    font-weight: 400;
+    letter-spacing: 0.5rem;
+    color: #1c2332;
+}
+
+.newsletter-info{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    letter-spacing: 0.4rem;
+}
+
+/******************INPUT*****************/
+
+.news-input{
+    margin-top: 3rem;
+    outline: none;
+    border: none;
+    padding: 1.5rem 2rem;
+    width:50%;
+    border-bottom: 1px #1c2332 solid;
+    font-style: italic;
+    font-weight: 400;
+    transition: all 0.5s;
+}
+.news-input:hover{
+    border-bottom: 2px #ffbb33 solid;
+}
+.news-button{
+    padding: 1.2rem 2rem;
+    outline:none;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px #1c2332 solid;
+    margin-left: 1.5rem;
+    font-family: "Poppins",sans-serif;
+    cursor: pointer;
+}
+
+/****************************************/
+
+/* ---------------------------------
+5. FOOTER
+--------------------------------- */
+
+.footer{
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    background-color: #eeeeee;
+    gap: 2rem;
+    font-size: 1.7rem;
+}
+
+/*******************LIST*****************/
+
+.footer-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 10rem);
+    gap: 1rem;
+    list-style: none;
+}
+
+.footer-list a{
+    font-size: 1.3rem;
+    color: #1c2332;
+    text-decoration: none;
+}
+.footer-list li:nth-child(2){
+    place-self: center;
+}
+
+.footer-icons{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-self: end;
+    column-gap: 2rem;
+    list-style: none;
+}
+
+/****************************************/

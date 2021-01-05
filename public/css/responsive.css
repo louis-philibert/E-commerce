@@ -1,0 +1,447 @@
+/* Screens Resolution : 1400px
+-------------------------------------------------------------------------- */
+@media only screen and (max-width: 1400px) {
+	
+	/* ---------------------------------
+	1. PRIMARY STYLES
+	--------------------------------- */
+	
+	/* ---------------------------------
+	2. HEADER
+    --------------------------------- */
+    
+    .text-h2 {
+        font-size: 4rem;
+    }
+
+	/* ---------------------------------
+	3. PRODUCT-SECTION
+	--------------------------------- */
+
+	/* ---------------------------------
+	4. STEPS
+	--------------------------------- */
+
+	/* ---------------------------------
+	5. POSSIBLITIES
+	--------------------------------- */
+
+	/* ---------------------------------
+	6. FOOTER
+	--------------------------------- */
+    
+}
+
+/* Screens Resolution : 1200px
+-------------------------------------------------------------------------- */
+@media only screen and (max-width: 1200px) {
+	
+	/* ---------------------------------
+	1. GENERALE
+	--------------------------------- */
+
+	/* ---------------------------------
+	2. HEADER
+    --------------------------------- */
+    
+    .text-h2 {
+        font-size: 3rem;
+        font-weight: bold;
+    }
+
+	/* ---------------------------------
+	3. PRODUCT-SECTION
+	--------------------------------- */
+
+	/* ---------------------------------
+	4. STEPS
+	--------------------------------- */
+
+	/* ---------------------------------
+	5. POSSIBLITIES
+	--------------------------------- */
+
+	/* ---------------------------------
+	6. FOOTER
+	--------------------------------- */
+    
+}
+
+/* Screens Resolution : 992px
+-------------------------------------------------------------------------- */
+@media only screen and (max-width:992px) {
+	
+	/* ---------------------------------
+	1. GENERALE
+	--------------------------------- */
+
+	/* ---------------------------------
+	2. HEADER
+    --------------------------------- */
+    
+    .text-h2 {
+        font-size: 4rem;
+        font-weight: bold;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    .navlist-liens {
+        width: 100%;
+    }
+
+	/* ---------------------------------
+	3. PRODUCT-SECTION
+    --------------------------------- */
+    
+    /****************PRODUCTS***************/
+
+    .product:hover > .products-liens {
+        top: 40%;
+    }
+
+    /****************************************/
+
+	/* ---------------------------------
+	4. STEPS
+	--------------------------------- */
+
+	/* ---------------------------------
+	5. POSSIBLITIES
+	--------------------------------- */
+
+	/* ---------------------------------
+	6. FOOTER
+	--------------------------------- */
+	
+}
+
+/* Screens Resolution : 768px and 780px
+-------------------------------------------------------------------------- */
+@media only screen and (min-width:768px) and (max-width:819px) {
+	
+	/* ---------------------------------
+	1. GENERALE
+	--------------------------------- */
+
+	/* ---------------------------------
+	2. HEADER
+	--------------------------------- */
+
+	/* ---------------------------------
+	3. PRODUCT-SECTION
+	--------------------------------- */
+
+	/* ---------------------------------
+	4. STEPS
+	--------------------------------- */
+
+	/* ---------------------------------
+	5. POSSIBLITIES
+	--------------------------------- */
+
+	/* ---------------------------------
+	6. FOOTER
+	--------------------------------- */
+	
+}
+
+
+/* Screens Resolution : 767px
+-------------------------------------------------------------------------- */
+@media only screen and (max-width: 767px) {
+	
+	/* ---------------------------------
+	1. GENERALE
+	--------------------------------- */
+
+	/* ---------------------------------
+	2. HEADER
+    --------------------------------- */
+    
+    .header {
+        background-position: bottom;
+    }
+
+    .text-h2 {
+        font-size: 3.2rem;
+        font-weight: bold;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    .navbar {
+        padding: 0 1rem 0 0;
+    }
+
+    .compagny {
+        margin-right: 10rem;
+        width: max-content;
+    }
+
+    label{
+        display: block;
+    }
+
+    .btn {
+        display: block;
+        background-color: #e0d00f;
+        color: #fff;
+        width: 55px;
+        height: 50px;
+        line-height: 50px;
+        padding: 0 20px;
+        cursor: pointer;
+        transition: width .3s ease-in-out;
+        margin-left: 2rem;
+        font-size: x-large;
+        outline-style: auto;
+    }
+    /* Menu button - ends */
+
+    /* Sidebar - starts */
+    .sidebar {
+        background-color: #2B2E33;
+        position: fixed;
+        width: 250px;
+        height: 100%;
+        z-index: 1111;
+        transition: transform .3s ease-in-out;
+        transform: translateX(-290px);
+        top: 5rem;
+    }
+
+    .sidebar ul {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        grid-template: none;
+    }
+
+    .sidebar ul a {
+        position: relative;
+        text-decoration: none;
+        display: block;
+        background-color: transparent;
+        color: #BAB5BD;
+        padding: 15px 20px;
+        font-size: 16px;
+    }
+
+    /* Add the word "New" to the second item and "2" to the third item */
+    .sidebar ul a:nth-child(2)::after, .sidebar ul a:nth-child(3)::after {
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        margin-top: -9px;
+        color: #fff;
+        font-size: 13px;
+        padding: 0 7px;
+        height: 18px;
+        line-height: 18px;
+        text-align: center;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+    }
+
+    .sidebar ul a:hover, .sidebar ul a.active {
+        background-color: #161920;
+        color: #fff;
+    }
+
+    .sidebar ul a:hover::before, .sidebar ul a.active::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "";
+        background-color: #247D9E;
+        width: 4px;
+        height: 100%;
+    }
+    /* Sidebar - ends */
+
+    /* Effect of showing the sidebar - starts */
+    #checkbox:checked ~ .sidebar {
+        transform: translateX(0);
+    }
+
+    #checkbox:checked + .btn {
+        width: 250px;
+        padding: 0 20px;
+        position: fixed;
+        left: -2rem;
+        z-index: 1111;
+    }
+
+    #checkbox:checked + .btn span { /* Show again the word "Menu" in the button */
+        display: inline;
+    }
+    /* Effect of showing the sidebar - ends */
+
+	/* ---------------------------------
+	3. PRODUCT-SECTION
+    --------------------------------- */
+
+    /*************CATEGORY-LIST**************/
+
+    .category-list {
+        text-align: -webkit-center;
+        min-width: -webkit-fill-available;
+    }
+
+    /****************************************/
+    
+    /****************PRODUCTS***************/
+
+    .product-list {
+        grid-template-columns: repeat(3, minmax(15rem, 1fr));
+    }
+
+    .product-section {
+        padding: 2rem 0rem;
+    }
+
+    .product:hover > .products-liens {
+        top: 45%;
+    }
+
+    /****************************************/
+
+	/* ---------------------------------
+	4. SECTION (NEWSLETTER)
+    --------------------------------- */
+    
+    .section-newsletter {
+        padding: 0rem  8rem 5rem 8rem;
+    }
+
+	/* ---------------------------------
+	5. POSSIBLITIES
+	--------------------------------- */
+
+	/* ---------------------------------
+	6. FOOTER
+    --------------------------------- */
+
+    .footer {
+        grid-template-rows: repeat(2, 1fr);
+        place-content: center;
+        grid-template-columns: min-content;
+    }
+
+    .footer-list {
+        grid-template-columns: repeat(4, 10rem);
+    }
+
+    .footer-icons {
+        grid-template-columns: repeat(5, 1fr);
+        justify-self: center;
+    }
+
+}
+    
+/* Screens Resolution : 576px
+-------------------------------------------------------------------------- */
+@media only screen and (max-width: 576px) {
+	
+	/* ---------------------------------
+	1. GENERALE
+	--------------------------------- */
+
+	/* ---------------------------------
+	2. HEADER
+    --------------------------------- */
+    
+    .text-h2 {
+        font-size: 4rem;
+        font-weight: bold;
+        text-align: center;
+        white-space: inherit;
+    }
+
+	/* ---------------------------------
+	3. PRODUCT-SECTION
+    --------------------------------- */
+
+     /*************CATEGORY-LIST**************/
+
+     .category-list {
+        min-width: -webkit-fill-available;
+        grid-template-columns: auto;
+    }
+
+    /****************************************/
+
+      /****************PRODUCTS***************/
+
+      .product-list {
+        grid-template-columns: repeat(3, minmax(12rem, 1fr));
+    }
+
+    /****************************************/
+
+	/* ---------------------------------
+	4. STEPS
+	--------------------------------- */
+
+	/* ---------------------------------
+	5. POSSIBLITIES
+	--------------------------------- */
+
+	/* ---------------------------------
+	6. FOOTER
+	--------------------------------- */
+	
+}
+
+/* Screens Resolution : 0px and 375px
+-------------------------------------------------------------------------- */
+@media only screen and (min-width: 0px) and (max-width: 375px) {
+	
+	/* ---------------------------------
+	1. GENERALE
+	--------------------------------- */
+
+	/* ---------------------------------
+	2. HEADER
+    --------------------------------- */
+    
+    .text-h2{
+        font-size: 8rem;
+        font-weight: bold;
+        text-align: center;
+        white-space: inherit;
+    }
+
+    .header{
+        height: 80vh;
+        background-position: bottom;
+    }
+
+	/* ---------------------------------
+	3. PRODUCT-SECTION
+	--------------------------------- */
+
+    .product-section{
+        padding: 1rem 0rem;
+    }
+
+    /*************CATEGORY-LIST**************/
+
+
+    /****************************************/
+
+
+	/* ---------------------------------
+	4. STEPS
+	--------------------------------- */
+
+	/* ---------------------------------
+	5. POSSIBLITIES
+	--------------------------------- */
+
+	/* ---------------------------------
+	6. FOOTER
+	--------------------------------- */
+} 
